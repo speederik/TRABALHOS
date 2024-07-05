@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros no js</title>
+</head>
+<body style="background-color: rgb(32, 23, 23);">
+    <h1 style="color: green;">Media do aluno v1.0</h1>
+    <button onclick="media()" style="color: green;">Calcular media</button>
+    <section id="situacao"><p style="color: rgb(245, 0, 0);">O resultado dos numeros é:</p></section>
+    <script>
+        function media() {
+            let nom = window.prompt('Qual é o nome do jumento?')
+            let nota1 = Number(window.prompt(`Qual foi a primeira nota de ${nom}?`))
+            let nota2 = Number(window.prompt(`Qual foi a segunda nota de ${nom}?`))
+            let nota3 = Number(window.prompt(`Qual a terceira nota de ${nom}?`))
+            let nota4 = Number(window.prompt(`Qual a quarta nota de ${nom}?`))
+
+            med=(nota1 + nota2 + nota3 + nota4 ) / 4
+            let resultado = document.getElementById('situacao')
+            res.innerHTML = `<p>Calculando a media final de <mark>${nom}</mark>.</p>`
+            res.innerHTML += `<p> A media final sera <mark>${med}</mark>.</p>`
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
